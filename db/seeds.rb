@@ -12,4 +12,4 @@ Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
 Ingredient.create(name: "Light rum")
 Ingredient.create(name: "Applejack")
-
+Ingredient.create(name: "Sex")
