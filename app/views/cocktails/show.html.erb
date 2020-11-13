@@ -6,6 +6,13 @@
 <h5 class="text-info text-center"><% @cocktail.doses.each do |dose| %>
   <p><%= "#{dose.description} of #{dose.ingredient.name}" %></p>
 <% end %></h5>
+
+<p class="text-center">
+<% @cocktail.photos.each do |photo| %>
+<%= cl_image_tag photo.key, width: 400, height: 300, crop: :fill %>
+<% end %>
+</p>
+
 </div>
 <div class="m-5">
 <%= render 'dose_form', dose: @dose, cocktail: @cocktail%></p>
