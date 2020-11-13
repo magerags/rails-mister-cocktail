@@ -17,5 +17,6 @@
 <div class="m-5">
 <%= render 'dose_form', dose: @dose, cocktail: @cocktail%></p>
 </div>
-<p class=text-center><%= link_to "back", cocktails_path %></p>
+<p class="text-center"><%= link_to "back", cocktails_path %></p>
 </div>
+<p class="text-center"><%= link_to "delete", @cocktail, method: :delete, data: { confirm: 'Are you sure?'}  %></p>
