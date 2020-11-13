@@ -8,10 +8,9 @@
 <% end %></h5>
 
 <p class="text-center">
-<% @cocktail.photos.each do |photo| %>
-<%= cl_image_tag photo.key, width: 400, height: 300, crop: :fill %>
-<% end %>
+<%= cl_image_tag @cocktail.photo.key, width: 400, height: 300, crop: :fill %>
 </p>
+
 
 </div>
 <div class="m-5">
