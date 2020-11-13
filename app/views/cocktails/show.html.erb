@@ -1,0 +1,14 @@
+<br>
+<br>
+<div class="m-5">
+<h1 class="text-center"><%= @cocktail.name %></h1>
+<div class="mt-5">
+<h5 class="text-info text-center"><% @cocktail.doses.each do |dose| %>
+  <p><%= "#{dose.description} of #{dose.ingredient.name}" %></p>
+<% end %></h5>
+</div>
+<div class="m-5">
+<%= render 'dose_form', dose: @dose, cocktail: @cocktail%></p>
+</div>
+<p class=text-center><%= link_to "back", cocktails_path %></p>
+</div>
